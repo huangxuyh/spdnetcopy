@@ -30,7 +30,7 @@ rng(0) ;
 opts.layernum = 3;
 
 Winit = cell(opts.layernum,1);
-opts.datadim = [400, 200, 100, 50];
+opts.datadim = [6, 5, 4, 3];
 
 
 for iw = 1 : opts.layernum
@@ -40,7 +40,7 @@ for iw = 1 : opts.layernum
 end
 
 f=1/100 ;
-classNum = 7;
+classNum = 2;
 fdim = size(Winit{iw},2)*size(Winit{iw},2);
 theta = f*randn(fdim, classNum, 'single');
 Winit{end+1} = theta;
